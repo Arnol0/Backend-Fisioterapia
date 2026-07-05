@@ -1,4 +1,4 @@
-import { registerUser, loginUser } from "../Services/authService.js";
+import { registerUser, loginUser } from "../Services/authservice.js";
 
 export const register = async (req, res) => {
 

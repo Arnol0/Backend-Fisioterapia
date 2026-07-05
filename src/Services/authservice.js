@@ -4,7 +4,7 @@ import generateJWT from "../Utils/jwt.js";
 
 export const registerUser = async (data) => {
 
-    const { nombre, apellido, correo, password, telefono, rol } = data;
+    const { nombre, apellido, correo, password, telefono, edad } = data;
 
     const existe = await User.findOne({ correo });
 
@@ -13,7 +13,6 @@ export const registerUser = async (data) => {
     }
 
     const salt = await bcrypt.genSalt(10);
-
     const passwordHash = await bcrypt.hash(password, salt);
 
     const usuario = await User.create({
@@ -22,7 +21,7 @@ export const registerUser = async (data) => {
         correo,
         password: passwordHash,
         telefono,
-        rol,
+        rol: "paciente"
     });
 
     return {
