@@ -224,9 +224,9 @@ Proyecto desarrollado como parte del curso de Arquitectura de Software.
 
 Integrantes:
 
-- Integrante 1
-- Integrante 2
-- Integrante 3
+- Nicole Sharon Mendoza Choqquepura
+- Arnol Ramos Chipana
+- Fátima Gutierrez
 
 ---
 
