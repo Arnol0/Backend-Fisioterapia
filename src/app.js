@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import cookieParser from "cookie-parser";
 import patientRoutes from "./Routes/patientRoutes.js";
-import authRoutes from "./Routes/authRoutes.js";
+import authRoutes from "./Routes/authroutes.js";
 import physiotherapistRoutes from "./Routes/physiotherapistRoutes.js";
 import routineRoutes from "./Routes/routineRoutes.js";
 import exerciseRoutes from "./Routes/exerciseRoutes.js";
